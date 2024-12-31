@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello There</title>
+    <style>
+        @keyframes zoomFade {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(1.1);
+            opacity: 0.7;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        letter-spacing: 0.1em;
+        animation: zoomFade 3s ease-out;
+        line-height: 1.5; /* For paragraph style */
+        max-width: 80%; /* Adjust to fit text */
+    }
+
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: gray;
+    }
+
+    a {
+        color: #8ebfff;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1>
+        "Happy New Year Bestiee, hope you love it hehe, I look forward to our New Year together and hope to be together forever <3💗💗 Kinder Joy<33."
+    </h1><br><br>
+    <button onclick="goToFlowerPage()">Another Surprise (CLICK ME)</button>
+    <script>
+        function goToFlowerPage() {
+            window.location.href = 'flower.html';
+        }
+    </script>
+    
+</body>
+</html>
